@@ -1,3 +1,4 @@
+import 'tsconfig-paths/register';
 import { Configuration, App } from '@midwayjs/decorator';
 import * as koa from '@midwayjs/koa';
 import * as validate from '@midwayjs/validate';

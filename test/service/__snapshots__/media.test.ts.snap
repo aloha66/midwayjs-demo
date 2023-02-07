@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test/service/media.test.ts should GET / 1`] = `
+{
+  "email": "xxx.xxx@xxx.com",
+  "phone": "12345678901",
+  "username": "mockedName",
+}
+`;
