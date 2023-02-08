@@ -36,8 +36,8 @@
     "dev": "cross-env NODE_ENV=local midway-bin dev --ts",
     "test": "midway-bin test --ts",
     "cov": "midway-bin cov --ts",
-    "lint": "mwts check",
-    "lint:fix": "mwts fix",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
     "ci": "npm run cov",
     "build": "midway-bin build -c"
   },

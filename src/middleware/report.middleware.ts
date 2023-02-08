@@ -1,6 +1,6 @@
 import { IMiddleware } from '@midwayjs/core'
 import { Middleware } from '@midwayjs/decorator'
-import { NextFunction, Context } from '@midwayjs/koa'
+import { Context, NextFunction } from '@midwayjs/koa'
 
 @Middleware()
 export class ReportMiddleware implements IMiddleware<Context, NextFunction> {
@@ -15,7 +15,7 @@ export class ReportMiddleware implements IMiddleware<Context, NextFunction> {
       ctx.logger.info(
         `Report in "src/middleware/report.middleware.ts", rt = ${
           Date.now() - startTime
-        }ms`
+        }ms`,
       )
       // 返回给上一个中间件的结果
       return result

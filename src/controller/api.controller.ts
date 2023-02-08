@@ -1,4 +1,4 @@
-import { Inject, Controller, Get, Query } from '@midwayjs/decorator'
+import { Controller, Get, Inject, Query } from '@midwayjs/decorator'
 import { Context } from '@midwayjs/koa'
 import { CustomHttpError } from '../error/custom.error'
 import { UserService } from '../service/user.service'
@@ -6,10 +6,10 @@ import { UserService } from '../service/user.service'
 @Controller('/api')
 export class APIController {
   @Inject()
-  ctx: Context
+    ctx: Context
 
   @Inject()
-  userService: UserService
+    userService: UserService
 
   @Get('/get_user')
   async getUser(@Query('uid') uid) {
