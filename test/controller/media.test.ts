@@ -1,4 +1,4 @@
-import { createApp, close, createHttpRequest } from '@midwayjs/mock';
+import { createApp, close, createHttpRequest } from "@midwayjs/mock";
 import { Application, Framework } from '@midwayjs/koa';
 import path from 'path';
 import fs from 'fs';

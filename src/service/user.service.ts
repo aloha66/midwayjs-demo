@@ -1,5 +1,5 @@
-import { Provide } from '@midwayjs/decorator';
-import { IUserOptions } from '../interface';
+import { Provide } from '@midwayjs/decorator'
+import { IUserOptions } from '../interface'
 
 @Provide()
 export class UserService {
@@ -9,6 +9,6 @@ export class UserService {
       username: 'mockedName',
       phone: '12345678901',
       email: 'xxx.xxx@xxx.com',
-    };
+    }
   }
 }
